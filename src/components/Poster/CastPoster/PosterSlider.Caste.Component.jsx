@@ -1,8 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
-import Poster from "../Poster/Poster.Component";
+import CastPoster from "./Poster.Caste.Component";
 
-const PosterSlider = (props) => {
+const CastPosterSlider = (props) => {
   const { posters, title, subtitle, isDark } = props;
   const settings = {
     infinte: false,
@@ -52,11 +52,11 @@ const PosterSlider = (props) => {
       </div>
       <Slider {...settings}>
         {posters.map((each, index) => (
-          <Poster {...each} isDark={isDark} key={index} />
+          <CastPoster {...each} isDark={isDark} key={index} />
         ))}
       </Slider>
     </>
   );
 };
 
-export default PosterSlider;
+export default CastPosterSlider;
