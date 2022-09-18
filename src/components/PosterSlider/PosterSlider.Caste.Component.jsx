@@ -1,9 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
-import CastPoster from "./Poster.Caste.Component";
+import CastPoster from "../Poster/CastPoster/Poster.Caste.Component";
 
 const CastPosterSlider = (props) => {
-  const { posters, title, subtitle, isDark } = props;
+  const { posters, title, subtitle } = props;
   const settings = {
     infinte: false,
     speed: 500,
@@ -39,20 +39,12 @@ const CastPosterSlider = (props) => {
   return (
     <>
       <div className="flex flex-col items-start sm:ml-3 ml-0 my-2">
-        <h3
-          className={`text-2xl font-bold ${
-            isDark ? "text-white" : "text-black"
-          }`}
-        >
-          {title}
-        </h3>
-        <p className={`text-md ${isDark ? "text-white" : "text-gray-500"}`}>
-          {subtitle}
-        </p>
+        <h3 className="text-2xl font-bold text-black">{title}</h3>
+        <p className="text-md text-gray-500">{subtitle}</p>
       </div>
       <Slider {...settings}>
         {posters.map((each, index) => (
-          <CastPoster {...each} isDark={isDark} key={index} />
+          <CastPoster {...each} key={index} />
         ))}
       </Slider>
     </>
