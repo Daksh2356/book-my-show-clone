@@ -1,22 +1,12 @@
 import React from "react";
-import { useState } from "react";
+import { useContext } from "react";
+import { MovieContext } from "../../context/Movie.context";
 import Payment from "../PaymentModal/Payment.Component";
 
 const MovieInfo = ({ movie }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [price, setPrice] = useState(0);
-
   const genres = movie.genres?.map(({ name }) => name).join(", ");
-
-  const rentMovie = () => {
-    setIsOpen(true);
-    setPrice(149);
-  };
-
-  const buyMovie = () => {
-    setIsOpen(true);
-    setPrice(599);
-  };
+  const { isOpen, setIsOpen, price, rentMovie, buyMovie } =
+    useContext(MovieContext);
 
   return (
     <>
