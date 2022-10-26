@@ -1,5 +1,9 @@
 import React, { useState } from "react";
+
+// react-slick
 import HeroSlider from "react-slick";
+
+// components
 import { NextArrow, PrevArrow } from "./Arrows.Component";
 
 const HeroCarousel = () => {

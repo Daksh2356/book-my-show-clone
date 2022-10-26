@@ -1,5 +1,9 @@
 import React from "react";
+
+// headless - ui
 import { Disclosure } from "@headlessui/react";
+
+// react-icons
 import { BiChevronUp, BiChevronDown } from "react-icons/bi";
 
 const PlayFilters = (props) => {

@@ -1,4 +1,6 @@
 import React from "react";
+
+// components
 import MovieNavbar from "../components/Navbar/MovieNavbar.Component";
 
 const MovieLayoutHoc =

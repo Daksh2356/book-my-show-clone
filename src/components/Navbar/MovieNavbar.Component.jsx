@@ -1,6 +1,11 @@
 import React from "react";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
+
+// react-icons
 import { BiChevronDown, BiMenu, BiSearch, BiShareAlt } from "react-icons/bi";
+
+// context
 import { MovieContext } from "../../context/Movie.context";
 
 const NavSm = () => {
@@ -44,6 +49,18 @@ const NavLg = () => {
           <span className="text-gray-200 text-base flex items-center cursor-pointer hover:text-white">
             DelhiNCR <BiChevronDown />
           </span>
+          <Link
+            to={`/`}
+            className="text-gray-200 text-base flex items-center cursor-pointer hover:text-white"
+          >
+            Home
+          </Link>
+          <Link
+            to={`/plays`}
+            className="text-gray-200 text-base flex items-center cursor-pointer hover:text-white"
+          >
+            Plays
+          </Link>
           <button className="bg-red-600 text-white px-2 py-1 text-sm rounded ">
             Sign In
           </button>

@@ -1,6 +1,10 @@
-import React, { useEffect, useState } from "react";
 import axios from "axios";
+import React, { useEffect, useState } from "react";
+
+// layouts
 import DefaultLayoutHoc from "../layout/Default.Layout";
+
+// components
 import HeroCarousel from "../components/HeroCarousel/HeroCarousel.Component";
 import PosterSlider from "../components/PosterSlider/PosterSlider.Component";
 import EntertainmentCardSlider from "../components/Entertainment/EntertainmentCard.Component";

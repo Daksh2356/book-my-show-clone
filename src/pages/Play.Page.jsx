@@ -1,10 +1,11 @@
 import React from "react";
+
+// layouts
 import DefaultLayoutHoc from "../layout/Default.Layout";
 
 // components
 import Poster from "../components/Poster/Poster.Component";
 import PlayFilters from "../components/PlayFilters/PlayFilters.Component";
-// import PlayFilters from "../components/PlayFilters/PlayFilters.Component";
 
 const PlayPage = () => {
   return (

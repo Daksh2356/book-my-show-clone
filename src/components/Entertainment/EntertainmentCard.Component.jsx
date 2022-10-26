@@ -1,4 +1,6 @@
 import React from "react";
+
+// react-slick
 import Slider from "react-slick";
 
 const EntertainmentCard = (props) => {

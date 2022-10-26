@@ -1,5 +1,9 @@
 import React from "react";
+
+// react-slick
 import Slider from "react-slick";
+
+// components
 import Poster from "../Poster/Poster.Component";
 
 const PosterSlider = (props) => {

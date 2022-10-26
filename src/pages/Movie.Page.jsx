@@ -1,10 +1,18 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
-import MovieLayoutHoc from "../layout/Movie.Layout";
-import { useParams } from "react-router-dom";
 import { useContext } from "react";
-import { MovieContext } from "../context/Movie.context";
+import { useParams } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+
+// react-icons
 import { FaCcVisa, FaCcApplePay } from "react-icons/fa";
+
+// context
+import { MovieContext } from "../context/Movie.context";
+
+// layouts
+import MovieLayoutHoc from "../layout/Movie.Layout";
+
+// components
 import PosterSlider from "../components/PosterSlider/PosterSlider.Component";
 import MovieHero from "../components/MovieHero/MovieHero.Component";
 import Slider from "react-slick";

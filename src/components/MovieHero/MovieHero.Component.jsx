@@ -1,6 +1,10 @@
 import React from "react";
 import { useContext } from "react";
+
+// context
 import { MovieContext } from "../../context/Movie.context";
+
+// components
 import MovieInfo from "./MovieInfo.Component";
 
 const MovieHero = () => {
