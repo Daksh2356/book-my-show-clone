@@ -1,3 +1,6 @@
+# book-my-show-clone
+This is a project made with React.js to create a clone of bookmyshow website
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
